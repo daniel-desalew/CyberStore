@@ -1,0 +1,12 @@
+{
+  "name": "electronics-shopping",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n client,server \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
